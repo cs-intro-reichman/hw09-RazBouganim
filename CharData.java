@@ -1,4 +1,4 @@
-/** Represents a character data object. 
+/** Represents a character data object.
  *  A character data object has a char value,
  *  a counter, and two probability fields. */
 public class CharData {
@@ -7,12 +7,12 @@ public class CharData {
 	char chr;
 
 	// a counter
-	int count; 
+	int count;
 
 	// a probability (number between 0 and 1)
-	double p;    
+	double p;
 
-	// a commutative probability (number between 0 and 1)
+	// a commulative probability (number between 0 and 1)
 	double cp;
 
 	/** Creates and initializes a character data object. */
@@ -27,9 +27,9 @@ public class CharData {
 	public boolean equals(char chr) {
 		return this.chr == chr;
 	}
-	
+
 	/** Returns a textual representation of this CharData object. */
 	public String toString() {
-		return "('" + chr + "', " + count + ", " + p + ", " + cp + ")";
+		return "(" + chr + " " + count + " " + p + " " + cp + ")";
 	}
 }
